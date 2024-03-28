@@ -19,4 +19,17 @@ while (x < 6):
         def number2():
             b = random_number
             return b
-    break
+    def question():
+        a = number1
+        b = number2
+        return "Solve the following equation. %d * %d?:" % a, b
+    def answer():
+        a = number1
+        b = number2
+        c = a + b
+        return c
+    def ask():
+        q = question()
+        pa = int(input((q)))
+    ask()
+    
