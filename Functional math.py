@@ -1,5 +1,5 @@
 x = 1
-import pandas as More_pandas
+import pandas as Morepandas
 import random
 Name = input("What is your name?: ")
 def ran():
@@ -35,14 +35,16 @@ while (x < 6):
             print("Incorrect, The answer was %d" % (c))
             return "Incorrect"
     corrin()
+    x += 1
     def collection():
+        c = answer()
+        pa = ask()
         if(x == 1):
             a1 = a
             b1 = b
             c1 = c
             pa1 = pa
             ic = corrin()
-            x += 1
         else:
             if(x == 2):
                 a2 = a
@@ -50,7 +52,6 @@ while (x < 6):
                 c2 = c
                 pa2 = pa
                 ic2 = corrin()
-                x += 1
             else:
                 if(x == 3):
                     a3 = a
@@ -58,7 +59,6 @@ while (x < 6):
                     c3 = c
                     pa3 = pa
                     ic3 = corrin()
-                    x += 1
                 else:
                     if(x == 4):
                         a4 = a
@@ -66,7 +66,6 @@ while (x < 6):
                         c4 = c
                         pa4 = pa
                         ic4 = corrin()
-                        x += 1
                     else:
                         if(x == 5):
                             a5 = a
@@ -74,6 +73,9 @@ while (x < 6):
                             c5 = c
                             pa5 = pa
                             ic5 = corrin()
-                            x += 1
                         else:
-                            
+                            dict = {Name: ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5"], "Number 1": [a1, a2, a3, a4, a5], "Number 2": [b1, b2, b3, b4, b5], "Your answer": [pa1, pa2, pa3, pa4, pa5], "Correct answer": [c1, c2, c3, c4, c5], "Correct or incorrect":
+                                [ic1, ic2, ic3, ic4, ic5]}
+                                stats = Morepandas.DataFrame(dict)
+                                return stats
+    collection()
