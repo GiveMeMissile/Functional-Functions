@@ -33,7 +33,7 @@ def results():
     c = math()
     coi = incor()
     name = Names()
-    dict = {"Stats": ["First number", "Second number", "Your answer" "Correct answer", "Correct or incorrect"], name: [a, b, ans, c, coi]}
+    dict = {"Stats": ["First number", "Second number", "Your answer", "Correct answer", "Correct or incorrect"], name: [a, b, ans, c, coi]}
     res = pd.DataFrame(dict)
     return res
 def printing():
